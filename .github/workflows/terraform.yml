@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
   
 jobs:
-  terraform:
+   terraform:
     name: 'Terraform'
     env:
     #AWS Secret
