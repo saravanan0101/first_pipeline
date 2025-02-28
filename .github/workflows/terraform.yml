@@ -20,10 +20,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Terraform setup
-      uses: hashicorp/setup-terraform@v1
+    #- name: Terraform setup
+    #  uses: hashicorp/setup-terraform@v1
 
-    - name: Terraform Init 
+    - name: Terraform Init
+      uses: hashicorp/terraform-github-actions@v1 
       run: terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
@@ -39,5 +40,5 @@ jobs:
     - name: Terraform Apply
       run:  terraform apply -auto-approve
      # if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
-       #-input=false  
+       #-input=false 
   
