@@ -23,8 +23,10 @@ jobs:
     #- name: Terraform setup
     #  uses: hashicorp/setup-terraform@v1
 
-    - name: Terraform Init
+    - name: Terraform set
       uses: hashicorp/terraform-github-actions@v1 
+
+    - name: Terraform Init
       run: terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
