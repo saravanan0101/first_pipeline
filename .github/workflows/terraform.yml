@@ -45,5 +45,5 @@ jobs:
        #-input=false 
 
     - name:  Terraform Destroy
-      run:  terraform destroy     
+      run:  terraform destroy -auto-approve    
   
