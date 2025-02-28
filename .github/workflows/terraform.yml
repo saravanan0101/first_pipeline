@@ -44,6 +44,6 @@ jobs:
      # if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
        #-input=false 
 
-    - name:  Terraform Destory
-      run:  terraform destory     
+    - name:  Terraform Destroy
+      run:  terraform destroy     
   
