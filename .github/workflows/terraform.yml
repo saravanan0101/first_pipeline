@@ -24,7 +24,7 @@ jobs:
     #  uses: hashicorp/setup-terraform@v1
 
     - name: Terraform set
-      uses: hashicorp/terraform-github-actions@v1 
+      uses: hashicorp/setup-terraform@v3
 
     - name: Terraform Init
       run: terraform init
